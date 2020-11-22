@@ -1,0 +1,25 @@
+<ion-header no-border>
+  <ion-toolbar color="success">
+    <ion-title>Login Ionic 5</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <div class="">
+        <ion-item>
+          <ion-input type="text" placeholder="Email" [(ngModel)]="email_address"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <ion-button expand="full" class="no-padding" color="success" (click)="tryLogin()">Login</ion-button>
+    </div>
+    
+    <p class="ion-padding info-1">
+      To start it would be nice to pray.<br/>
+      If you do not have an account, click <span (click)="openRegister()">register now</span>
+    </p>
+  </ion-list>
+
+</ion-content>
